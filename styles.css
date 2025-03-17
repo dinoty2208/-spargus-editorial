@@ -1,124 +1,171 @@
-/* Fondo de la página */
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 body {
-    background-color: #f4f7fa; /* Un color de fondo suave y moderno */
-    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
-    color: #333; /* Color de texto oscuro para un buen contraste */
+    background-color: #f4f7fa; /* Fondo suave y limpio */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y legible */
+    color: #333; /* Texto oscuro para un buen contraste */
     margin: 0;
     padding: 0;
 }
 
+/* Títulos principales */
+h1 {
+    color: #2C3E50; /* Un color elegante */
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase; /* Títulos en mayúsculas */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    font-weight: 700;
+}
+
 /* Fondo de las secciones */
 section {
-    background-color: #ffffff; /* Fondo blanco para las secciones */
-    border-radius: 10px; /* Bordes redondeados para un diseño más amigable */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más marcada para profundidad */
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease; /* Transición suave para sombras */
+}
+
+/* Efecto hover sobre las secciones */
+section:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Sombra más intensa cuando pasa el cursor */
 }
 
 /* Títulos de las secciones */
 h2 {
-    color: #2C3E50; /* Un color elegante para los títulos */
-    font-size: 1.8em;
-    margin-bottom: 15px;
+    color: #2C3E50; /* Color elegante para los títulos */
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center; /* Alineado al centro */
+    text-transform: uppercase; /* Mayúsculas para los subtítulos */
+    letter-spacing: 2px;
 }
 
 /* Estilo para los enlaces */
 nav a {
-    color: #3498db; /* Un azul bonito y moderno */
+    color: #3498db; /* Azul brillante para los enlaces */
     text-decoration: none; /* Elimina el subrayado */
     font-weight: bold;
+    font-size: 1.2em; /* Tamaño de fuente mayor */
     transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
 
 /* Efecto hover en los enlaces */
 nav a:hover {
-    color: #e74c3c; /* Color rojo suave al pasar el cursor */
+    color: #e74c3c; /* Rojo suave al pasar el cursor */
+    transform: scale(1.1); /* Efecto de agrandamiento */
 }
 
 /* Estilo para los contenedores de los libros */
 .libros-container {
     display: flex;
-    justify-content: space-around; /* Distribuye los libros de forma uniforme */
-    flex-wrap: wrap; /* Ajusta las imágenes cuando el tamaño de la pantalla sea pequeño */
-    gap: 30px; /* Espacio entre los libros */
+    justify-content: center; /* Alinea los libros al centro */
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 /* Estilo para cada libro */
 .libro {
-    width: 220px; /* Ancho fijo para cada libro */
+    width: 220px;
     text-align: center;
-    background-color: #ecf0f1; /* Fondo suave para cada libro */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 15px;
-    transition: transform 0.3s ease; /* Efecto de escala al pasar el cursor */
+    background-color: #ecf0f1;
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más intensa */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 /* Efecto al pasar el cursor sobre cada libro */
 .libro:hover {
-    transform: translateY(-10px); /* Eleva el libro cuando pasa el cursor */
+    transform: translateY(-15px); /* Eleva el libro más al pasar el cursor */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
 }
 
 /* Estilo de las imágenes de los libros */
 .libro img {
-    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
-    height: auto; /* Mantiene las proporciones */
-    border-radius: 5px; /* Bordes redondeados */
-    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover en las imágenes */
+.libro img:hover {
+    transform: scale(1.05); /* Imagen ligeramente más grande al pasar el cursor */
 }
 
 /* Estilo para los botones */
 button {
     background-color: #3498db; /* Azul bonito para los botones */
-    color: white; /* Texto blanco */
-    border: none; /* Elimina el borde */
-    padding: 10px 20px; /* Espaciado alrededor del texto */
-    font-size: 16px;
-    border-radius: 5px; /* Bordes redondeados */
+    color: white;
+    border: none;
+    padding: 12px 30px; /* Botón más grande */
+    font-size: 1.2em;
+    border-radius: 25px; /* Bordes muy redondeados */
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave para el color */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase; /* Texto en mayúsculas */
 }
 
 /* Efecto hover en el botón */
 button:hover {
-    background-color: #2980b9; /* Color más oscuro cuando pasa el cursor */
+    background-color: #2980b9; /* Azul más oscuro */
+    transform: scale(1.05); /* Agranda el botón al pasar el cursor */
 }
 
 /* Estilo para la sección de autores */
 #autores {
     background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para los contenedores de los autores */
 .autor {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover sobre los autores */
+.autor:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
 }
 
 /* Estilo de la imagen del autor */
 .autor img {
-    width: 100px; /* Ancho de la imagen del autor */
-    height: 100px; /* Alto de la imagen del autor */
-    border-radius: 50%; /* Hace la imagen circular */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 4px solid #3498db; /* Borde azul alrededor de la imagen */
 }
 
 /* Estilo para el nombre del autor */
 .autor h3 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #2C3E50;
     margin: 0;
+    font-weight: 700;
 }
 
 /* Estilo para la biografía del autor */
 .autor p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #555;
-    line-height: 1.5;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-style: italic; /* Texto en cursiva */
 }
+
 
