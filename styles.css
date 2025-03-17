@@ -39,7 +39,7 @@ nav a:hover {
 /* Estilo para los contenedores de los libros */
 .libros-container {
     display: flex;
-    justify-content: space-around; /* Distribuye los libros de forma uniforme */
+    justify-content: center; /* Centra el libro */
     flex-wrap: wrap; /* Ajusta las imágenes cuando el tamaño de la pantalla sea pequeño */
     gap: 30px; /* Espacio entre los libros */
 }
