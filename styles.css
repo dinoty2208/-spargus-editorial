@@ -1,69 +1,86 @@
+/* Fondo de la página */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f4f7fa; /* Un color de fondo suave y moderno */
+    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+    color: #333; /* Color de texto oscuro para un buen contraste */
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
+/* Fondo de las secciones */
 section {
-    padding: 40px;
+    background-color: #ffffff; /* Fondo blanco para las secciones */
+    border-radius: 10px; /* Bordes redondeados para un diseño más amigable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.libro {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Títulos de las secciones */
+h2 {
+    color: #2C3E50; /* Un color elegante para los títulos */
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
-form {
-    max-width: 400px;
-    margin: auto;
+/* Estilo para los enlaces */
+nav a {
+    color: #3498db; /* Un azul bonito y moderno */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Efecto hover en los enlaces */
+nav a:hover {
+    color: #e74c3c; /* Color rojo suave al pasar el cursor */
+}
+
+/* Estilo para los contenedores de los libros */
+.libros-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around; /* Distribuye los libros de forma uniforme */
+    flex-wrap: wrap; /* Ajusta las imágenes cuando el tamaño de la pantalla sea pequeño */
+    gap: 30px; /* Espacio entre los libros */
 }
 
-input, textarea {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
+/* Estilo para cada libro */
+.libro {
+    width: 220px; /* Ancho fijo para cada libro */
+    text-align: center;
+    background-color: #ecf0f1; /* Fondo suave para cada libro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 15px;
+    transition: transform 0.3s ease; /* Efecto de escala al pasar el cursor */
 }
 
+/* Efecto al pasar el cursor sobre cada libro */
+.libro:hover {
+    transform: translateY(-10px); /* Eleva el libro cuando pasa el cursor */
+}
+
+/* Estilo de las imágenes de los libros */
+.libro img {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo para los botones */
 button {
-    background: #333;
-    color: white;
-    padding: 10px;
-    border: none;
+    background-color: #3498db; /* Azul bonito para los botones */
+    color: white; /* Texto blanco */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    font-size: 16px;
+    border-radius: 5px; /* Bordes redondeados */
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el color */
 }
 
-footer {
-    background-color: #222;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #2980b9; /* Color más oscuro cuando pasa el cursor */
 }
