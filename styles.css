@@ -84,3 +84,41 @@ button {
 button:hover {
     background-color: #2980b9; /* Color más oscuro cuando pasa el cursor */
 }
+
+/* Estilo para la sección de autores */
+#autores {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los contenedores de los autores */
+.autor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo de la imagen del autor */
+.autor img {
+    width: 100px; /* Ancho de la imagen del autor */
+    height: 100px; /* Alto de la imagen del autor */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el nombre del autor */
+.autor h3 {
+    font-size: 1.6em;
+    color: #2C3E50;
+    margin: 0;
+}
+
+/* Estilo para la biografía del autor */
+.autor p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
